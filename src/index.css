@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: linear-gradient(to right, rgb(126, 15, 87), rgba(146, 10, 94, 0.819));
+  color: white;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin: .4rem;
+}
+
+.dropdown p {
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  padding: .2rem .4rem;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: deeppink;
+  border: 1px solid deeppink;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  margin: 2rem;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  border: 1px solid white;
+  box-shadow: 1px 1px 6px white;
+  padding: 0.5rem;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.pop {
+  animation: moveup .3s linear;
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
